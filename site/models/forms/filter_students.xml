@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields name="filter">
+		<field
+			name="search"
+			type="text"
+			label="COM_BANNERS_SEARCH_IN_TITLE"
+			hint="JSEARCH_FILTER"
+			class="js-stools-search-string"
+		/>
+	</fields>
+	<fields name="list">
+		<field
+			name="fullordering"
+			type="list"
+			label="LIST_FULL_ORDERING"
+			description="LIST_FULL_ORDERING_DESC"
+			onchange="this.form.submit();"
+			default="fullname ASC"
+			>
+			<option value="">JGLOBAL_SORT_BY</option>
+			<option value="fullname ASC">ORDERING_ASC</option>
+			<option value="fullname DESC">ORDERING_DESC</option>
+			<option value="created ASC">CREATED_ASC</option>
+			<option value="created DESC">CREATED_DESC</option>
+		</field>
+		<field
+			name="limit"
+			type="limitbox"
+			class="input-mini"
+			default="25"
+			label="COM_CONTENT_LIST_LIMIT"
+			description="COM_STUDENT_LIST_LIMIT_DESC"
+			onchange="this.form.submit();"
+		/>
+	</fields>
+</form>

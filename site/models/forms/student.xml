@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form
+				addrulepath="/administrator/components/com_student/models/rules"
+>
+	<fieldset
+				name="details"
+				label="STUDENT_DETAILS"
+	>
+		<field
+				name="id"
+				type="hidden"
+				/>
+		<field
+				name="fullname"
+				type="text"
+				label="FULLNAME"
+				description="FULLNAME"
+				class="inputbox validate-fullname"
+				validate="fullname"
+				required="true"
+				default=""
+				/>
+		<field
+				name="email"
+				type="text"
+				label="EMAIL"
+				description="EMAIL"
+				class="inputbox validate-email"
+				required="true"
+				default=""
+				/>
+		</field>
+	</fieldset>
+</form>
